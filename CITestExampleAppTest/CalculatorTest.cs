@@ -34,5 +34,13 @@ namespace CITestExampleAppTest
 
             Assert.Equal(-5, result);
         }
+
+        [Fact]
+        public void Divide_ByZero_ShouldThrowException()
+        {
+            var calculator = new Calculator();
+
+            Assert.Throws<DivideByZeroException>(() => calculator.Divide(5, 0));
+        }
     }
 }

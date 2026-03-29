@@ -14,6 +14,7 @@ namespace CITestExampleApp
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Пример использование CI тестов на GitHub Action");
             Console.WriteLine($"10 + 5 = {calculator.Add(10, 5)}");
+            Console.WriteLine($"5/0 = {calculator.Divide(5, 0)}");
             Console.WriteLine(new string('-', 50));
         }
     }
