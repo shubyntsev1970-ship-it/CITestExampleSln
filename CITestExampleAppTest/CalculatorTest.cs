@@ -23,7 +23,16 @@ namespace CITestExampleAppTest
 
             Console.WriteLine("This test verifies that the Add method correctly sums two integers.");
             // Assert
-            Assert.Equal(6, result);
+            Assert.Equal(5, result);
+        }
+        [Fact]
+        public void Add_NegativeNumbers_WorksCorrectly()
+        {
+            var calculator = new Calculator();
+
+            var result = calculator.Add(-2, -3);
+
+            Assert.Equal(-5, result);
         }
     }
 }
