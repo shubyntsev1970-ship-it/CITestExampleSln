@@ -40,6 +40,8 @@ namespace CITestExampleAppTest
         {
             var calculator = new Calculator();
 
+            // В данном тесте мы проверяем, что при попытке разделить число на ноль,
+            // метод Divide выбрасывает исключение DivideByZeroException.
             Assert.Throws<DivideByZeroException>(() => calculator.Divide(5, 0));
         }
     }
