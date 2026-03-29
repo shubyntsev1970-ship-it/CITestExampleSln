@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CITestExampleApp/CITestExampleApp.csproj" />
+  <Project Path="CITestExampleAppTest/CITestExampleAppTest.csproj" Id="d35ac888-0a90-4e5b-a20e-66916173a87d" />
+</Solution>
